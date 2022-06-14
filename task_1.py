@@ -1,4 +1,15 @@
-n = int(input())
-nn = n * 10 + n
-nnn = n * 100 + n * 10 + n
-print(n + nn + nnn)
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+c = input("Введите операцию: ")
+
+if c == '+':
+    print(a + b)
+elif c == '-':
+    print(a - b)
+elif c == '*':
+    print(a * b)
+elif c == '/':
+    print(a / b)
+while a == 0 or b == 0 and c == '/':
+    print("На ноль делить нельзя!")
+    break
